@@ -9,7 +9,7 @@ function Menu() {
   const [categories, setCategories] = useState<MenuCategory[]>([]);
   const [loading, setLoading] = useState(true);
   const [activeCategory, setActiveCategory] = useState<number | null>(null);
-  const categoryRefs = useRef<Record<number, HTMLDivElement | null>>({});
+  const categoryRefs = useRef<Record<number, HTMLElement | null>>({});
   const isScrolling = useRef(false);
 
   useEffect(() => {

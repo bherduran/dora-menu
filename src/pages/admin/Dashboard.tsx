@@ -171,9 +171,7 @@ export default function Dashboard() {
     setShowForm(true);
   }
 
-  function getCategoryName(id: number) {
-    return categories.find((c) => c.id === id)?.name ?? "—";
-  }
+
 
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white">
